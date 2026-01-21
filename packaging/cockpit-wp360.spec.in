@@ -1,7 +1,7 @@
-Name: cockpit-starter-kit
+Name: cockpit-wp360
 Version: %{VERSION}
 Release: 1%{?dist}
-Summary: Cockpit Starter Kit Example Module
+Summary: Cockpit module for the WP360 PLC
 License: LGPL-2.1-or-later
 
 # distributions which ship nodejs-esbuild can rebuild the bundle during package build

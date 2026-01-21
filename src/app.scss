@@ -1,5 +1,76 @@
-@use "page.scss";
+@use "page";
+@use "../node_modules/@patternfly/patternfly/base/patternfly-variables";
+@use "ct-card.scss";
+@use "../node_modules/@patternfly/patternfly/utilities/Text/text.css";
+@use "global-variables" as *;
 
 p {
     font-weight: bold;
+}
+
+.voltage > label {
+    //margin: 1em;
+}
+
+section {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 3em;
+    display: inline;
+    text-align: right;
+}
+
+.number-row>span {
+  display: flex;
+  align-items: center;
+}
+
+.number-row>span::after {
+  width: 1em;
+  margin-left: 0.35em;
+}
+
+.voltage>span::after {
+  content: "V";
+}
+.timeout>span::after {
+  content: "s";
+}
+.temperature>span::after {
+  content: "°C";
+}
+
+.number-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-evenly;
+  align-items: center;
+  margin: 0.5em 0em;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(127, 127, 127, 25%), rgba(127, 127, 127, 0%)) 1;
+}
+
+.program-version ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.program-version input[type=radio] {
+  margin-right: 0.35em;
 }
